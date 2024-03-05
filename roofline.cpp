@@ -113,8 +113,7 @@ int main()
     // Group 1 is a low arithmetic intensity algorithm intended to display
     // roofline behavior which may initially seem counter-intuitive.
     #ifdef GROUP_1
-    cout << "####################### Group 1 #######################\n"
-         << "    Algorithm: X = Ya + Yb\n    Data Set 1: " << ARRAY_SIZE_1 
+    cout << "    Algorithm: X = Ya + Yb\n    Data Set 1: " << ARRAY_SIZE_1 
          << " doubles/array.\n";
     #endif
     /******************** AOS - Unvectorized ********************/
@@ -161,8 +160,7 @@ int main()
     // Group 2 is not explored in the tutorial video, but it's here if you
     // wish to experiment with it. It has an AI between Groups 1 and 3.
     #ifdef GROUP_2
-    cout << "####################### Group 2 #######################\n"
-         << "    Algorithm: X = Ya + Yb + Yb\n    Data Set 1: " << ARRAY_SIZE_1
+    cout << "    Algorithm: X = Ya + Yb + Yb\n    Data Set 1: " << ARRAY_SIZE_1
          << " doubles/array.\n";
     #endif
     /******************** AOS - Unvectorized ********************/
@@ -209,8 +207,7 @@ int main()
     // Group 3 is a high arithmetic intensity algorithm that is intended
     // to demonstrate compute binding and compiler-induced AI changes.
     #ifdef GROUP_3
-    cout << "####################### Group 3 #######################\n"
-         << "    Algorithm: X = Ya + Ya + Yb + Yb + Yb\n    Data Set 1: " << ARRAY_SIZE_1
+    cout << "    Algorithm: X = Ya + Ya + Yb + Yb + Yb\n    Data Set 1: " << ARRAY_SIZE_1
          << " doubles/array.\n";
     #endif
     /******************** AOS - Unvectorized ********************/
@@ -283,8 +280,7 @@ int main()
     // Group 4 uses a different data set than the other Groups, and has
     // a medium AI. It is intended to demonstrate cache bandwidth binding.
     #ifdef GROUP_4
-    cout << "####################### Group 4 #######################\n"
-         << "    Algorithm: X = Ya + Ya + Yb + Yb\n    Data Set 2: " << ARRAY_SIZE_2
+    cout << "    Algorithm: X = Ya + Ya + Yb + Yb\n    Data Set 2: " << ARRAY_SIZE_2
          << " doubles/array.\n";
     #endif
     /**************************** SOA ***************************/
